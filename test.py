@@ -18,5 +18,7 @@ income = Market_data.iloc[:,5] * Market_data.iloc[:,6] +( Market_data.iloc[:,5] 
 plt.title("total selling by categorie")
 plt.figure(figsize=(16,8))
 sns.barplot(data = Market_data, x= income, hue = product)
+plt.xlabel("Income")
+plt.ylabel("Products")
 
 plt.show()
